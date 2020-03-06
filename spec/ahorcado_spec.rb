@@ -6,4 +6,9 @@ describe Ahorcado do
         result = ahorcado.pintar_lineas
         expect(result).to eq '_ _ _ _ _ _ _ _'
     end
+    it 'La palabra roto debe pintar 4 lineas' do 
+        ahorcado = Ahorcado.new 'roto'
+        result = ahorcado.pintar_lineas
+        expect(result).to eq '_ _ _ _'
+    end
 end
