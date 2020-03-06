@@ -17,6 +17,13 @@ class Ahorcado
     else
       return lineas
     end
+end
 
-  end
+    def la_letra_es_valida? letra
+        if letra.class != String or letra.size > 1
+            false
+        else
+            true
+        end
+    end
 end
