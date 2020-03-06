@@ -13,7 +13,7 @@ class Ahorcado
     else
       '_ _ _ _'
     end
-
+end
     def pintar_lineas
         if @palabra == 'ahorcado' 
             '_ _ _ _ _ _ _ _'
