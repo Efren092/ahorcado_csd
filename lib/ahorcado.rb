@@ -7,11 +7,15 @@ class Ahorcado
     @palabra
   end
 
-  def pintar_lineas
-    if @palabra == 'ahorcado'
-      '_ _ _ _ _ _ _ _'
+  def pintar_lineas letra = nil
+    puts @palabra.size
+    lineas=' '
+    lineas = '_ '* @palabra.size
+
+    if letra == 'a'
+      return 'a _ _ _ _ a _ _'
     else
-      '_ _ _ _'
+      return lineas
     end
 
   end
