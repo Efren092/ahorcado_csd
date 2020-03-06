@@ -1,5 +1,5 @@
 class Ahorcado
-    def initialize palabra
+    def initialize palabra= 'ahorcado'
         @palabra = palabra
     end
     def pintar_lineas
