@@ -10,7 +10,7 @@
   <h1>Bienvenido Al Juego Del Ahorcado</h1>
   <p><%= session['lineas'] %></p>
   <br>
-  <form>
+  <form action="validar" method="POST">
     <input name="intento">
     <input type="submit" value="Validar">
   </form>

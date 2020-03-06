@@ -48,7 +48,14 @@ describe Ahorcado do
     it 'si ingreso la letra a' do
         ahorcado = Ahorcado.new
         letra = 'a'
-        result = ahorcado.pintar_lineas letra
+        result = ahorcado.pintar_letra letra
         expect(result).to eq 'a _ _ _ _ a _ _'
+    end
+
+    it 'si ingreso la letra a y la h0' do
+        ahorcado = Ahorcado.new
+        result = ahorcado.pintar_letra 'a'
+        result = ahorcado.pintar_letra 'h'
+        expect(result).to eq 'a h _ _ _ a _ _'
     end
 end
