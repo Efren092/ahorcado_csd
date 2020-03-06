@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahorcado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahorcado</title>
 </head>
 <body>
-    <h1>Bienvenido Al Juego Del Ahorcado</h1>
-    <h1>Adivina la palabra</h1>
-    <p><%=session['lineas']%></p>
+<h1>Bienvenido Al Juego Del Ahorcado</h1>
+<p><%= session['lineas'] %></p>
+<br>
+<form>
+  <input name="intento">
+  <input type="submit" value="Validar">
+</form>
 </body>
 </html>
