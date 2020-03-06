@@ -1,6 +1,7 @@
 require 'sinatra'
 require './config'
+require './lib/ahorcado.erb'
 
 get '/' do
-erb(:index)
+  session['palabra_secreta']='ahorcado'
 end

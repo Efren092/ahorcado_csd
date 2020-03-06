@@ -1,3 +1,10 @@
+Given(/^cuando abro el juego$/) do
+  visit '/'
+end
+
+Then(/^debo debe existir la palabra "([^"]*)"$/) do |text|
+  expect(page.body).to match /#{text}/m
+end
 
 Given(/^dado que ingreso al juego$/) do
     visit '/'
