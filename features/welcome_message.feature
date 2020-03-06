@@ -7,3 +7,4 @@ Feature: validar_mensaje_de_bienvenida
 Scenario: dado que ingreso al juego debo poder ver Bienvenido Al Juego Del Ahorcado
     Given dado que ingreso al juego 
     Then debo ver "Bienvenido Al Juego Del Ahorcado"
+
