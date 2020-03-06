@@ -15,4 +15,3 @@ Feature: definir Palabra
   Scenario: La palabra debe existir
     Given cuando abro el juego
     Then debo debe existir la palabra "ahorcado"
-
